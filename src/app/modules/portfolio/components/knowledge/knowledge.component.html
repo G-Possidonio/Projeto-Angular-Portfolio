@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Conhecimentos</h2>
+    <ul>
+        @for(item of arrayKnowLedge(); track item) {
+            <li>
+                <!--loading="lazy" => Adia o carregamento da imagem até o momento necessário-->
+                <img [src]="item.src" [alt]="item.alt" loading="lazy" width="22px" height="24px" />
+            </li>
+        }
+    </ul>
+</div>
